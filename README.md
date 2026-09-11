@@ -84,6 +84,7 @@ Sensitive wallet actions are always initiated by an explicit user action. Tally 
 ## Documentation
 
 - [`docs/ROADMAP.md`](docs/ROADMAP.md) — phased execution plan, dates, gates and acceptance criteria
+- [`docs/WORKBOARD.md`](docs/WORKBOARD.md) — one task per phase with dependencies and exit-gate checklists
 - [`docs/TECHNICAL_BLUEPRINT.md`](docs/TECHNICAL_BLUEPRINT.md) — architecture, data model, APIs, auth, settlement engine, security and deployment
 - [`docs/COMPETITION_CHECKLIST.md`](docs/COMPETITION_CHECKLIST.md) — rubric-driven release and submission checklist
 - [`AGENTS.md`](AGENTS.md) — implementation rules for coding agents and contributors
