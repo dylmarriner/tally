@@ -81,6 +81,29 @@ const nimiq = await init()
 
 Sensitive wallet actions are always initiated by an explicit user action. Tally never prompts for wallet permissions automatically on page load.
 
+## Running locally
+
+The web app and the API are separate processes in dev:
+
+```bash
+npm install
+npm run dev:api   # Node HTTP API on :4000 (in-memory stores if DATABASE_URL is unset)
+npm run dev       # Vite dev server on :5173, proxying /api → :4000
+```
+
+Set `DATABASE_URL` to use PostgreSQL-backed stores instead of the dev in-memory
+fallback; run `npm run db:migrate` after wiring credentials.
+
+Auth endpoints:
+
+```text
+POST /api/v1/auth/challenge
+POST /api/v1/auth/verify
+POST /api/v1/auth/logout
+GET  /api/v1/me
+PATCH /api/v1/me
+```
+
 ## Documentation
 
 - [`docs/ROADMAP.md`](docs/ROADMAP.md) — phased execution plan, dates, gates and acceptance criteria
