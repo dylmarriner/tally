@@ -1,0 +1,8 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #20201e; background: #f4f0e8; font-synthesis: none; }
+* { box-sizing: border-box; } body { margin: 0; min-width: 320px; } button { font: inherit; cursor: pointer; }
+.shell { width: min(100% - 40px, 560px); min-height: 100vh; margin: auto; padding: 32px 0; display: flex; flex-direction: column; }
+header { display: flex; justify-content: space-between; align-items: center; } .eyebrow { margin: 0; letter-spacing: .14em; font-size: .72rem; font-weight: 800; }
+.status-dot { width: 10px; height: 10px; border-radius: 50%; background: #c7bfb0; } .status-dot.ready { background: #30966a; } .status-dot.failed { background: #c25b4b; }
+.hero { margin: 18vh 0 48px; } h1 { margin: 14px 0 20px; font-size: clamp(2.6rem, 11vw, 4.8rem); line-height: .95; letter-spacing: -.065em; } h1 em { color: #7d7365; font-style: normal; } .lede { max-width: 390px; color: #686258; line-height: 1.5; font-size: 1.05rem; }
+.provider { border: 1px solid #d8d0c3; border-radius: 16px; padding: 18px; background: #f9f6f0; } .provider p { color: #686258; line-height: 1.45; margin: 7px 0 14px; } .provider button { min-height: 44px; border: 0; border-radius: 10px; padding: 0 15px; background: #e9e2d6; color: #20201e; font-weight: 700; }
+.primary { width: 100%; min-height: 52px; margin-top: 14px; border: 0; border-radius: 12px; background: #20201e; color: #fff; font-weight: 750; } .primary:disabled { opacity: .45; cursor: wait; } .fine-print { text-align: center; color: #81796e; font-size: .78rem; }
